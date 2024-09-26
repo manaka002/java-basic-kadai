@@ -52,7 +52,8 @@ public class Car_Chapter15
 		
 		else
 		{
-			System.out.println("無効なギアです。");
+			speed = 10; // 上記以外のギアの場合は時速10km
+			System.out.println("上記以外のギアです。");
 		}
 	}
 	
