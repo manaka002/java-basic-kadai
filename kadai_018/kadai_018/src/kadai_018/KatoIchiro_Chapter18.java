@@ -5,8 +5,14 @@ public class KatoIchiro_Chapter18 extends Kato_Chapter18
 {
 	public KatoIchiro_Chapter18()
 	{
-		super( "加藤", "一郎", "東京都中野区〇×");
-	}
+		super("加藤", "", "東京都中野区〇×"); 
+        setGivenName("一郎"); 
+    }
+
+    public void setGivenName(String name) 
+    {
+        this.givenName = name; 
+    }
 	
 	
 	// 個別の実装
