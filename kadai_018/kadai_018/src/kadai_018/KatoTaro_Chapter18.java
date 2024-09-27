@@ -7,7 +7,7 @@ public class KatoTaro_Chapter18 extends Kato_Chapter18
 	
 	{
 		super( "加藤", "", "東京都中野区〇×");
-		setGivenName("太郎");
+		
 	}
 	
 	 // 名を設定するメソッド
