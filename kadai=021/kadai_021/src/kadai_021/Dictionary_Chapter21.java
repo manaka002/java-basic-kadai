@@ -22,7 +22,6 @@ public class Dictionary_Chapter21
 	private void addWords()
 	
 	{
-		
 		// 辞書に単語と意味を追加
 		dictionary.put("apple", "りんご");
 		dictionary.put("peach", "桃");
@@ -34,7 +33,6 @@ public class Dictionary_Chapter21
 		dictionary.put("grape", "ぶどう");
 		dictionary.put("muscat", "マスカット");
 		dictionary.put("cherry", "さくらんぼ");
-		
 	}
 	
 	
@@ -45,6 +43,28 @@ public class Dictionary_Chapter21
 		return dictionary.get(word);
 	}
 	
+	// 配列内の単語を繰り返し処理
+	 public void searchWords(String[] wordsToLookUp)
+	  
+	  {
+		  for (String word : wordsToLookUp)
+			  
+			{
+				// 辞書を調べる
+				String meaning = lookUp(word);
+				
+				if (meaning != null)
+					
+				{
+					System.out.println( word + "の意味は" + meaning );
+				}
+				
+				else
+				{
+					System.out.println( word + "? ? ?" );
+				} 
+			}
+	  }
 	
 	// 辞書のサイズを取得するメソッド
 	public int size()
@@ -53,5 +73,4 @@ public class Dictionary_Chapter21
 		return dictionary.size();
 		
 	}
-	
 }
